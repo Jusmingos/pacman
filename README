@@ -1,0 +1,27 @@
+README <Pacman>
+
+Hand-in: This is my final hand-in.
+
+Overview:
+        My Pacman has 12 classes, 2 enums and 1 interface. The Game class is the top-level logic class.
+        The game consists of pacman, ghosts, dots, energizers, and fruits. The collideable interface
+        represents all the objects that pacman can collide with. The game can be paused by pressing 'p';
+        the player wins when pacman eats all the dots, energizers and fruits; the game ends when pacman
+        loses all three lives.
+        Bells and Whistles: Fruits; the ghosts turn 180 degrees when they switch modes; the ghosts blink
+        before ending frightened mode.
+
+
+Design Choices:
+        I use a collideable interface and polymorphism to handle pacman's collision with different
+        objects. I also use several static instance variables and methods so that different classes
+        have easier access to them. I use one Ghost class to represent all the ghosts and use the color
+        to determine the specific ghost. I use a public Enum class to represent the directions and the
+        modes so that the entire game can refer to them directly.
+        I have a separate class representing the ghost pen and delegate some methods, such as moving and
+        removing the ghost, to the ghost pen class. This reduces the amount of logic in the game class.
+
+Known Bugs: None
+
+Hours: This project took me approximately 30 hours to complete.
+
